@@ -15,7 +15,6 @@
 		818048702A8397AD00AC891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8180486E2A8397AD00AC891F /* Main.storyboard */; };
 		818048722A8397AE00AC891F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818048712A8397AE00AC891F /* Assets.xcassets */; };
 		818048752A8397AE00AC891F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818048732A8397AE00AC891F /* LaunchScreen.storyboard */; };
-		E50B68E42EA7C3A6000DE3C6 /* JWTKit in Frameworks */ = {isa = PBXBuildFile; productRef = E50B68E32EA7C3A6000DE3C6 /* JWTKit */; };
 		E50B68E62EA7C3AC000DE3C6 /* CptShare in Frameworks */ = {isa = PBXBuildFile; productRef = E50B68E52EA7C3AC000DE3C6 /* CptShare */; };
 		E50B68E82EA7C3AC000DE3C6 /* zm_annoter_dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E50B68E72EA7C3AC000DE3C6 /* zm_annoter_dynamic */; };
 		E50B68EA2EA7C3AC000DE3C6 /* ZoomTask in Frameworks */ = {isa = PBXBuildFile; productRef = E50B68E92EA7C3AC000DE3C6 /* ZoomTask */; };
@@ -58,7 +57,6 @@
 				E50B68EA2EA7C3AC000DE3C6 /* ZoomTask in Frameworks */,
 				E50B68EC2EA7C3AC000DE3C6 /* ZoomVideoSDK in Frameworks */,
 				E50B68E62EA7C3AC000DE3C6 /* CptShare in Frameworks */,
-				E50B68E42EA7C3A6000DE3C6 /* JWTKit in Frameworks */,
 				E50B68E82EA7C3AC000DE3C6 /* zm_annoter_dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,14 +423,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		70E8BE302DBA6C36004DAA36 /* XCRemoteSwiftPackageReference "jwt-kit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/vapor/jwt-kit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.2;
-			};
-		};
 		E533B3992EA0CD8C009D9729 /* XCRemoteSwiftPackageReference "zoom-video-sdk-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/zoom/zoom-video-sdk-iOS/";
@@ -444,11 +434,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E50B68E32EA7C3A6000DE3C6 /* JWTKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 70E8BE302DBA6C36004DAA36 /* XCRemoteSwiftPackageReference "jwt-kit" */;
-			productName = JWTKit;
-		};
 		E50B68E52EA7C3AC000DE3C6 /* CptShare */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E533B3992EA0CD8C009D9729 /* XCRemoteSwiftPackageReference "zoom-video-sdk-iOS" */;
