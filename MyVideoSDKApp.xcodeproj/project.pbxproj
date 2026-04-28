@@ -15,6 +15,9 @@
 		818048702A8397AD00AC891F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8180486E2A8397AD00AC891F /* Main.storyboard */; };
 		818048722A8397AE00AC891F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818048712A8397AE00AC891F /* Assets.xcassets */; };
 		818048752A8397AE00AC891F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818048732A8397AE00AC891F /* LaunchScreen.storyboard */; };
+		D70E3E372F57E6B6000D3FE5 /* CptShare in Frameworks */ = {isa = PBXBuildFile; productRef = D70E3E362F57E6B6000D3FE5 /* CptShare */; };
+		D70E3E392F57E6B6000D3FE5 /* ZoomTask in Frameworks */ = {isa = PBXBuildFile; productRef = D70E3E382F57E6B6000D3FE5 /* ZoomTask */; };
+		D70E3E3B2F57E6B6000D3FE5 /* ZoomVideoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D70E3E3A2F57E6B6000D3FE5 /* ZoomVideoSDK */; };
 		E50B68E62EA7C3AC000DE3C6 /* CptShare in Frameworks */ = {isa = PBXBuildFile; productRef = E50B68E52EA7C3AC000DE3C6 /* CptShare */; };
 		E50B68E82EA7C3AC000DE3C6 /* zm_annoter_dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E50B68E72EA7C3AC000DE3C6 /* zm_annoter_dynamic */; };
 		E50B68EA2EA7C3AC000DE3C6 /* ZoomTask in Frameworks */ = {isa = PBXBuildFile; productRef = E50B68E92EA7C3AC000DE3C6 /* ZoomTask */; };
@@ -54,8 +57,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70E3E392F57E6B6000D3FE5 /* ZoomTask in Frameworks */,
+				D70E3E3B2F57E6B6000D3FE5 /* ZoomVideoSDK in Frameworks */,
 				E50B68EA2EA7C3AC000DE3C6 /* ZoomTask in Frameworks */,
 				E50B68EC2EA7C3AC000DE3C6 /* ZoomVideoSDK in Frameworks */,
+				D70E3E372F57E6B6000D3FE5 /* CptShare in Frameworks */,
 				E50B68E62EA7C3AC000DE3C6 /* CptShare in Frameworks */,
 				E50B68E82EA7C3AC000DE3C6 /* zm_annoter_dynamic in Frameworks */,
 			);
@@ -151,7 +157,7 @@
 			);
 			mainGroup = 8180485C2A8397AD00AC891F;
 			packageReferences = (
-				E533B3992EA0CD8C009D9729 /* XCRemoteSwiftPackageReference "zoom-video-sdk-iOS" */,
+				D70E3E352F57E6B6000D3FE5 /* XCRemoteSwiftPackageReference "videosdk-ios" */,
 			);
 			productRefGroup = 818048662A8397AD00AC891F /* Products */;
 			projectDirPath = "";
@@ -423,6 +429,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D70E3E352F57E6B6000D3FE5 /* XCRemoteSwiftPackageReference "videosdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zoom/videosdk-ios/";
+			requirement = {
+				branch = "swift-package-manager";
+				kind = branch;
+			};
+		};
 		E533B3992EA0CD8C009D9729 /* XCRemoteSwiftPackageReference "zoom-video-sdk-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/zoom/zoom-video-sdk-iOS/";
@@ -434,6 +448,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D70E3E362F57E6B6000D3FE5 /* CptShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D70E3E352F57E6B6000D3FE5 /* XCRemoteSwiftPackageReference "videosdk-ios" */;
+			productName = CptShare;
+		};
+		D70E3E382F57E6B6000D3FE5 /* ZoomTask */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D70E3E352F57E6B6000D3FE5 /* XCRemoteSwiftPackageReference "videosdk-ios" */;
+			productName = ZoomTask;
+		};
+		D70E3E3A2F57E6B6000D3FE5 /* ZoomVideoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D70E3E352F57E6B6000D3FE5 /* XCRemoteSwiftPackageReference "videosdk-ios" */;
+			productName = ZoomVideoSDK;
+		};
 		E50B68E52EA7C3AC000DE3C6 /* CptShare */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E533B3992EA0CD8C009D9729 /* XCRemoteSwiftPackageReference "zoom-video-sdk-iOS" */;
